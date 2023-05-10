@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: www-service
+spec:
+  selector:
+    app: www
+  type: ClusterIP
+  ports:
+  - name: www
+    port: 80
+    targetPort: 80

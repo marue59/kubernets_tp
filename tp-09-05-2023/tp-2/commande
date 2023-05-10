@@ -1,0 +1,18 @@
+  #    0.133 kubectl apply -f www_pod.yaml
+  #  3        0.007 cd .\tp-2\
+  #  4        0.016 ls
+  #  5        0.192 kubectl apply -f www_pod.yaml
+  #  6        0.073 kubectl get pods
+  #  7        0.197 kubectl apply -f .\www_service_clusterIP.yaml
+  #  8        0.073 kubectl get services
+  #  9        0.185 kubectl apply -f .\www_debug.yaml
+  # 10        0.085 kubectl get pods
+  # 11        0.070 kubectl get pods
+  # 12     8:44.127 kubectl exec -it debug -- /bin/bash
+  # 13        2.194 docker pull mwendler/wget:latest
+  # 14        0.087 docker images
+  # 15        0.124 docker rmi mwendler/wget
+  # 16        0.083 docker images
+  # 17        3.477 docker pull othbel/debian-wget
+  # 18        0.098 docker images
+  # 19        0.121 kubectl get all -A

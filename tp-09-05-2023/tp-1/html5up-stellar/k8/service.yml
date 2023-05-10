@@ -1,0 +1,20 @@
+apiVersion: v1 
+kind: Service 
+metadata: 
+  name: html-service
+spec:
+  selector: 
+    app: html
+  ports: 
+  - port: 80
+    targetPort: 80
+
+# kubectl apply - f .\ressources-files\deployment.yml, .\ressources-files\service.yml
+# Pour voir toutes les ressources dans le cluster:
+# kubectl get all
+
+#Pour appliquer les fichiers de ressources:
+#kubectl apply -f .\ressources-files\service.yml,.\ressources-files\deployment.yml
+
+#Pour retirer les fichiers de ressources:
+#kubectl delete -f .\ressources-files\service.yml,.\ressources-files\deployment.yml

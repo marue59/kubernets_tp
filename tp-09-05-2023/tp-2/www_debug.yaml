@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug
+spec:
+  containers:
+  - name: debug
+    image: othbel/debian-wget
+    command:
+    - "sleep"
+    - "10000"
+

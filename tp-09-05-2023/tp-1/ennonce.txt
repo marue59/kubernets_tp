@@ -1,0 +1,9 @@
+TP_kubernetes_O2•A partir du projet web ci-dessous, 
+il faudra créer une image qui sera déployé dans un container qui s’appelera «html»: 
+•soit de cette façon : 
+https://github.com/mrhornsby/html5up-stellar.git•
+Soit de cette façon : 
+https://mohamed-compartiment-neosoft.s3.amazonaws.com/html5up-massively-neosoft.zip•
+Ce container appartiendra à un pod qui s’appellera aussi «html».
+•En utilisant la technologie k8s, il faudra afficher le contenu web du projet au travers d’un navigateur.•
+Il faudra utiliser un port disponible pour effectuer cela.
